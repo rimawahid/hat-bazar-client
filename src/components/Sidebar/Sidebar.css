@@ -1,0 +1,9 @@
+
+.sidebar-container {
+    min-height: 100vh;
+    background-color: var(--main-color);
+    height: 100%;
+}
+.side-menu {
+    padding-top: 40px;
+}
