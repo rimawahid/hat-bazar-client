@@ -6,7 +6,7 @@ const ManageProduct = () => {
     const[product ,setProduct] = useState([])
     const [id, setId] = useState('');
 useEffect(() => {
-    fetch('http://localhost:5000/product')
+    fetch('https://enigmatic-cove-10345.herokuapp.com/product')
     .then(res => res.json())
     .then(data => setProduct(data))
     
@@ -16,7 +16,7 @@ useEffect(() => {
     id &&
         axios
             .delete(
-                `http://localhost:5000/deleteProduct/${id}`
+                `https://enigmatic-cove-10345.herokuapp.com/deleteProduct/${id}`
             )
             .then(() => console.log('delete ss'));
 }, [id]);

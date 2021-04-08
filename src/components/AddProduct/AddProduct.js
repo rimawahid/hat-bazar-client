@@ -16,7 +16,7 @@ const onSubmit = data =>{
             price,
             imageURL,
         };
-    const url=`http://localhost:5000/addProduct`
+    const url=`https://enigmatic-cove-10345.herokuapp.com/addProduct`
     console.log(productData)
     fetch(url,{
         method: 'POST',

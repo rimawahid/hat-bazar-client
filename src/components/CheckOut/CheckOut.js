@@ -14,7 +14,7 @@ const Checkout = () => {
     useEffect(() => {
        
         axios
-            .get('http://localhost:5000/product')
+            .get('https://enigmatic-cove-10345.herokuapp.com/product')
             .then((res) => {
                 setProducts(res.data);
                 
@@ -34,7 +34,7 @@ const Checkout = () => {
     const handleClick = () => {
         axios
             .post(
-                'http://localhost:5000/addBuyData',
+                'https://enigmatic-cove-10345.herokuapp.com/addBuyData',
                 buyData
             )
             .then(() => alert('Order  successfully'));

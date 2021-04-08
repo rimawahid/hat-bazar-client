@@ -15,7 +15,7 @@ const Orders = () => {
       
         axios
             .get(
-                `http://localhost:5000/buyData?email=${loggedInUser.email}`
+                `https://enigmatic-cove-10345.herokuapp.com/buyData?email=${loggedInUser.email}`
             )
             .then((res) => {
                 setProducts(res.data);
